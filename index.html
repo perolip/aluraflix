@@ -1,89 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Receitas de Torta de Limão</title>
-</head>
-<body>
-    <header>
-        <h1>RECEITAS DE TORTA DE LIMÃO</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluraflix</title>
+    <!-- Google Fonts: Chakra Petch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'chakra-petch': ['Chakra Petch', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-900 font-chakra-petch">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4 text-center text-3xl font-bold rounded-b-lg shadow-lg">
+      ALURAFLIX
     </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-text">
-                <h2>A TORTA DE LIMÃO PERFEITA</h2>
-                <p><small>#receitasdoces</small></p>
-            </div>
+    <!-- Main Call to Action / Hero Section -->
+    <section class="flex flex-col md:flex-row items-center justify-center p-8 bg-gray-700 text-white rounded-lg shadow-xl mt-8 mx-4">
+      <div class="chamada-texto md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:mr-8">
+        <h1 class="text-5xl lg:text-6xl font-extrabold mb-4 text-orange-400">Sweet child o' mine</h1>
+        <p class="text-xl lg:text-2xl">#clássicosdorock</p>
+      </div>
 
-            <div class="hero-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-                    title="YouTube video player about the perfect lemon pie" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-                <p class="video-description">Assista ao vídeo para aprender a fazer a torta de limão perfeita!</p>
-            </div>
-        </section>
+      <div class="md:w-1/2">
+        <!-- Main video iframe -->
+        <<iframe width="560" height="315" src="https://www.youtube.com/embed/1w7OgIMMRc4?si=uOWWQxzmx3fZ1_gO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        ></iframe>
+      </div>
+    </section>
 
-        <section class="recipe-categories">
-            <h2>Mais Receitas Deliciosas</h2>
-            <div class="category-videos">
-                <div class="video-item">
-                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID_1"
-                        title="Receita de Torta de Limão Simples" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p>Torta de Limão Simples</p>
-                </div>
-                
-                <div class="video-item">
-                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID_2"
-                        title="Receita de Torta de Limão com Merengue" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p>Torta de Limão com Merengue</p>
-                </div>
-                
-                <div class="video-item">
-                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID_3"
-                        title="Receita de Torta de Limão Cremosa" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p>Torta de Limão Cremosa</p>
-                </div>
-                
-                <div class="video-item">
-                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID_4"
-                        title="Receita de Mini Tortas de Limão" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p>Mini Tortas de Limão</p>
-                </div>
-                
-                <div class="video-item">
-                    <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID_5"
-                        title="Receita de Torta de Limão Sem Forno" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p>Torta de Limão Sem Forno</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Receitas de Torta de Limão. Todos os direitos reservados.</p>
-    </footer>
-</body>
+    <!-- Movies and Series Category Section -->
+    <section class="py-12 px-4 bg-gray-800 text-white rounded-lg shadow-xl mt-8 mx-4">
+      <h2 class="text-4xl font-bold mb-8 text-center text-orange-400">Filmes e séries</h2>
+      <div class="categoria-videos grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <!-- Video 1 -->
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/CxKWTzr-k6s?si=vIU-lG6WBrhRpmtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          />
+        </a>
+        <!-- Video 2 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3mbBbFH9fAg?si=6GRO2hiQb7PHeSiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          />
+        </a>
+        <!-- Video 3 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zRIbf6JqkNc?si=j3h8RiI_2nhI9EZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          />
+        </a>
+        <!-- Video 4 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8SbUC-UaAxE?si=RnolB0iIapUskVjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          />
+        </a>
+        <!-- Video 5 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7pOr3dBFAeY?si=PIBILIwv1Rr8hPCe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          />
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
